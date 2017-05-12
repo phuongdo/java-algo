@@ -8,14 +8,14 @@ import java.util.Arrays;
 public class Sort {
 
     public static void main(String[] args) {
-        quickSort();
+        bubbleSort();
 
     }
 
     /**
-     * QuickSort O(n^2)
+     * Bubble O(n^2)
      */
-    public static void quickSort(){
+    public static void bubbleSort(){
         int arr[] = {3,8,4,2,9,6,1};
         System.out.println(Arrays.toString(arr));
         for(int i=0; i < arr.length;i++){
