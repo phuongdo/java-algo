@@ -16,7 +16,6 @@ public class StringAlg {
         StringBuffer buffer = new StringBuffer();
         for(int i = chars.length -1; i > 0;i-- ){
             buffer.append(chars[i]);
-
         }
         System.out.println(buffer.toString());
 
