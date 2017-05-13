@@ -4,14 +4,14 @@ import java.util.Arrays;
 
 /**
  * Created by phuongdv on 5/13/17.
- *
- *   In practice, the Quicksort algorithm becomes very slow when the array passed to it is already
- close to being sorted. Because there is no efficient way for the computer to find the median
- element to use as the pivot, the first element of the array is used as the pivot. So when
- the array is almost sorted, Quicksort doesn't partition it equally. Instead, the partitions
- are lopsided like in Figure 2. This means that one of the recursion branches is much deeper
- than the other, and causes execution time to go up. Thus, it is said that the more random
- the arrangement of the array, the faster the Quicksort Algorithm finishes.
+ * <p>
+ * In practice, the Quicksort algorithm becomes very slow when the array passed to it is already
+ * close to being sorted. Because there is no efficient way for the computer to find the median
+ * element to use as the pivot, the first element of the array is used as the pivot. So when
+ * the array is almost sorted, Quicksort doesn't partition it equally. Instead, the partitions
+ * are lopsided like in Figure 2. This means that one of the recursion branches is much deeper
+ * than the other, and causes execution time to go up. Thus, it is said that the more random
+ * the arrangement of the array, the faster the Quicksort Algorithm finishes.
  */
 // Java program for implementation of QuickSort
 class QuickSort {
