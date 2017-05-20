@@ -47,6 +47,12 @@ public class CollectionMain {
         System.out.println(lm.keySet());
         System.out.println(lm.values());
 
+        Iterator<Map.Entry<String,String>> it = lm.entrySet().iterator();
+        while(it.hasNext()){
+            System.out.println(it.next().getValue());
+        }
+
+
     }
 
 
