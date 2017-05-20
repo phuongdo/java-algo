@@ -11,8 +11,41 @@ public class CollectionMain {
 
     public static void main(String[] args){
 
-        testMethod3();
+//        testMethod3();
 
+//        HashMap makes absolutely no guarantees about the iteration order. It can (and will) even change completely when new elements are added.
+        Map m1 = new HashMap();
+        m1.put("map", "HashMap");
+        m1.put("schildt", "java2");
+        m1.put("mathew", "Hyden");
+        m1.put("schildt", "java2s");
+        System.out.println(m1.keySet());
+        System.out.println(m1.values());
+
+
+
+//        TreeMap will iterate according to the "natural ordering" of the keys according to their compareTo() method (or an externally supplied Comparator).
+//                Additionally, it implements the SortedMap interface, which contains methods that depend on this sort order.
+        System.out.println("-------------------");
+        SortedMap sm = new TreeMap();
+        sm.put("map", "TreeMap");
+        sm.put("schildt", "java2");
+        sm.put("mathew", "Hyden");
+        sm.put("schildt", "java2s");
+        System.out.println(sm.keySet());
+        System.out.println(sm.values());
+
+
+//        LinkedHashMap will iterate in the order in which the entries were put into the map
+        System.out.println("LinkedHashMap will iterate in the order in which the entries were put into the map");
+
+        LinkedHashMap lm = new LinkedHashMap();
+        lm.put("map", "LinkedHashMap");
+        lm.put("schildt", "java2");
+        lm.put("mathew", "Hyden");
+        lm.put("schildt", "java2s");
+        System.out.println(lm.keySet());
+        System.out.println(lm.values());
 
     }
 
